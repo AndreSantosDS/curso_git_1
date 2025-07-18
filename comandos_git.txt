@@ -1,0 +1,21 @@
+git init serve para inicializar um novo repositório Git em um diretório. Ele cria uma pasta oculta chamada .git que permite ao Git começar a rastrear versões dos arquivos naquele projeto.
+
+
+git status serve para mostrar o estado atual do repositório.
+Ele informa:
+Quais arquivos foram modificados.
+Quais arquivos ainda não foram adicionados ao staging (git add).
+Quais arquivos estão prontos para serem commitados.
+Se você está em uma branch e qual é ela.
+Se há commits pendentes para enviar (push) ou receber (pull).
+
+
+git add . serve para adicionar todas as mudanças feitas nos arquivos do projeto ao stage (área de preparação) do Git.
+Ou seja, ele prepara todos os arquivos modificados, criados ou deletados para serem incluídos no próximo commit.
+
+
+git commit -m "mensagem" serve para salvar as alterações feitas no seu projeto com uma mensagem descritiva.
+Explicando por partes:
+git commit: registra (salva) as mudanças que você adicionou com git add.
+-m "mensagem": permite escrever uma mensagem explicando o que foi feito naquela alteração (por exemplo: "corrige bug no login").
+
