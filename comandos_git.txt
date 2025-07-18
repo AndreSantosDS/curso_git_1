@@ -24,3 +24,7 @@ git branch -M main serve para renomear a branch atual para "main", forçando a m
 Resumo:
 -M = "mover" (rename) forçando a substituição, se necessário.
 main = novo nome da branch.
+
+
+git push -u origin main  serve para enviar (push) a branch main do seu repositório local para o repositório remoto chamado origin, e ao mesmo tempo configurar a branch main local para rastrear (-u = --set-upstream) a branch main remota.
+Isso significa que, depois desse comando, você pode usar só git push ou git pull sem precisar especificar o origin main toda vez.
