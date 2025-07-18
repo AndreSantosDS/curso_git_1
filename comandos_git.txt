@@ -28,3 +28,13 @@ main = novo nome da branch.
 
 git push -u origin main  serve para enviar (push) a branch main do seu repositório local para o repositório remoto chamado origin, e ao mesmo tempo configurar a branch main local para rastrear (-u = --set-upstream) a branch main remota.
 Isso significa que, depois desse comando, você pode usar só git push ou git pull sem precisar especificar o origin main toda vez.
+
+
+git pull serve para atualizar seu repositório local com as últimas mudanças do repositório remoto.
+Ele faz duas coisas de uma vez:
+git fetch → Baixa as atualizações do repositório remoto.
+git merge → Junta essas atualizações com a sua branch atual.
+Exemplo prático:
+Se outra pessoa fez alterações e enviou para o GitHub, você usa git pull para trazer essas alterações para o seu computador.
+
+
