@@ -18,7 +18,7 @@ git commit -m "mensagem" serve para salvar as alterações feitas no seu projeto
 Explicando por partes:
 git commit: registra (salva) as mudanças que você adicionou com git add.
 -m "mensagem": permite escrever uma mensagem explicando o que foi feito naquela alteração (por exemplo: "corrige bug no login").
-
+Também é possível comitar um arquivo por vez -> git commit 1_primeiro_repo/a.txt  -m "Estou enviando o arquivo de texto"
 
 git branch -M main serve para renomear a branch atual para "main", forçando a mudança mesmo que já exista uma branch com esse nome.
 Resumo:
