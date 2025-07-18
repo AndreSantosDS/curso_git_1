@@ -19,3 +19,8 @@ Explicando por partes:
 git commit: registra (salva) as mudanças que você adicionou com git add.
 -m "mensagem": permite escrever uma mensagem explicando o que foi feito naquela alteração (por exemplo: "corrige bug no login").
 
+
+git branch -M main serve para renomear a branch atual para "main", forçando a mudança mesmo que já exista uma branch com esse nome.
+Resumo:
+-M = "mover" (rename) forçando a substituição, se necessário.
+main = novo nome da branch.
