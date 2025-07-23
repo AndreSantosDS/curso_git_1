@@ -50,3 +50,11 @@ Ele faz duas coisas ao mesmo tempo:
 Remove o arquivo do seu diretório local (do sistema de arquivos).
 Marca o arquivo para remoção no próximo commit, ou seja, o Git entende que esse arquivo deve ser apagado do histórico do repositório.
 Depois que for feito o commit e o push o arquivo também vai ser removido do github.
+
+
+git log serve para exibir o histórico de commits de um repositório Git.
+Ele mostra uma lista com informações dos commits feitos, incluindo:
+Hash (ID) do commit (código único)
+Autor do commit
+Data e hora
+Mensagem do commit
