@@ -89,3 +89,12 @@ Resumindo:
 
 
 
+git reset --hard HEAD~1 -> Isso apaga o commit mais recente e restaura os arquivos para o estado do commit anterior.
+
+git reset --hard -> faz o Git voltar para um estado anterior e descarta todas as alterações no diretório de trabalho e na área de staging (index).
+Explicação rápida:
+reset → move o ponteiro do branch atual para um commit anterior.
+--hard → descarta todas as alterações locais (inclusive arquivos modificados e não salvos com git add).
+
+
+
