@@ -58,3 +58,19 @@ Hash (ID) do commit (código único)
 Autor do commit
 Data e hora
 Mensagem do commit
+
+
+git mv é usado para mover ou renomear arquivos ou diretórios em um repositório Git.
+Resumidamente:
+Ele move ou renomeia um arquivo e já registra isso para o próximo commit.
+
+Você tem um arquivo chamado relatorio.txt e quer renomeá-lo para relatorio-final.txt.
+Comando: git mv relatorio.txt relatorio-final.txt
+
+Se você está dentro da pasta css/ e quer renomear um arquivo, por exemplo, style.css para main.css, aqui está como fazer: git mv css/style.css css/main.css
+
+Você tem um arquivo chamado reset.css na pasta raiz do projeto e quer movê-lo para a pasta css/ -> git mv reset.css css/reset.css
+
+Depois faça o commit e o push
+
+
