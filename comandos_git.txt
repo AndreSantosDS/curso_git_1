@@ -60,6 +60,7 @@ Data e hora
 Mensagem do commit
 
 
+
 git mv é usado para mover ou renomear arquivos ou diretórios em um repositório Git.
 Resumidamente:
 Ele move ou renomeia um arquivo e já registra isso para o próximo commit.
@@ -72,5 +73,19 @@ Se você está dentro da pasta css/ e quer renomear um arquivo, por exemplo, sty
 Você tem um arquivo chamado reset.css na pasta raiz do projeto e quer movê-lo para a pasta css/ -> git mv reset.css css/reset.css
 
 Depois faça o commit e o push
+
+
+
+git checkout pode ser usado para desfazer alterações em arquivos que ainda não foram commitados. Isso significa que, se você modificou um arquivo, mas ainda não fez um git add seguido de git commit, é possível reverter essas alterações com git checkout.
+Exemplo de como Desfazer alterações em um arquivo específico:
+git checkout css/styles.css
+
+
+O arquivo .gitignore serve para dizer ao Git quais arquivos ou pastas não devem ser incluídos no controle de versão. Ou seja, ele evita que arquivos temporários, de configuração local, builds, senhas, ou arquivos gerados automaticamente sejam enviados para o repositório.
+Exemplo:
+Se você colocar no .gitignore a linha node_modules/, o Git vai ignorar toda a pasta node_modules ao fazer commits.
+Resumindo:
+.gitignore define o que o Git deve ignorar para não rastrear nem versionar.
+
 
 
