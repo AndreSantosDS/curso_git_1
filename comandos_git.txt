@@ -38,3 +38,15 @@ Exemplo prático:
 Se outra pessoa fez alterações e enviou para o GitHub, você usa git pull para trazer essas alterações para o seu computador.
 
 
+git clone é um comando usado para copiar um repositório remoto para sua máquina local.
+O que ele faz:
+Baixa todos os arquivos do projeto.
+Copia o histórico completo de commits.
+Já configura o repositório remoto (geralmente chamado de origin).
+
+
+git rm é usado para remover arquivos do seu repositório Git.
+Ele faz duas coisas ao mesmo tempo:
+Remove o arquivo do seu diretório local (do sistema de arquivos).
+Marca o arquivo para remoção no próximo commit, ou seja, o Git entende que esse arquivo deve ser apagado do histórico do repositório.
+Depois que for feito o commit e o push o arquivo também vai ser removido do github.
