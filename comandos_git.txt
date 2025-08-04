@@ -130,3 +130,18 @@ O comando git stash show -p 0(número da stash) -> serve para verificar as mudan
 Para limpar totalmente as stash de um branch podemos utilizar o comando git stash clear
 
 Caso seja necessário deletar uma stash especifica podemos utilizar git stash drop 1(número da stash)
+
+
+
+As tags no Git servem para marcar pontos específicos na história do repositório, geralmente usados para identificar versões importantes do projeto, como lançamentos (v1.0, v2.1.3, etc.).
+Principais usos das tags:
+1-Marcar versões de lançamento
+ºEx: Quando você termina uma versão estável do projeto, pode criar uma tag v1.0.0.
+2-Facilitar deploy e testes
+ºFerramentas de CI/CD ou scripts de produção/testes podem buscar uma versão específica por meio da tag.
+3-Referência imutável
+ºUma tag aponta para um commit específico e não muda (diferente de branches).
+
+Podemos criar tags nos branches por meio do comando git tag -a <nome> -m "<msg>" -> git tag -a v1.0 -m "versão estável 1.0"
+
+O comando git tag lista todas as tags
