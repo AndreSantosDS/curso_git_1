@@ -97,4 +97,5 @@ reset → move o ponteiro do branch atual para um commit anterior.
 --hard → descarta todas as alterações locais (inclusive arquivos modificados e não salvos com git add).
 
 
+Para visualizar os branchs disponíveis basta digitar git branch
 
