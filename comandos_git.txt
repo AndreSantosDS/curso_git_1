@@ -126,3 +126,7 @@ Podemos verificar as stashs criadas pelo comando git stash list
 O comando git stash apply 0(número da stash) -> serve para recuperar o codigo que foi adicionado na stash 
 
 O comando git stash show -p 0(número da stash) -> serve para verificar as mudanças de uma stash
+
+Para limpar totalmente as stash de um branch podemos utilizar o comando git stash clear
+
+Caso seja necessário deletar uma stash especifica podemos utilizar git stash drop 1(número da stash)
