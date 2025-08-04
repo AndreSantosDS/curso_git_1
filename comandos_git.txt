@@ -107,9 +107,19 @@ Podemos mudar para outro branch utilizando o comando git checkout nome_da_branch
 
 O comando git checkout -b nome_da_branch cria uma branch nova e automaticamente ele muda para essa branch criada
 
+
 Comando git marge
 1-Você está na branch main.
 2-Existe outra branch chamada feature-login com algumas alterações.
 3-Para unir as mudanças da feature-login na main, você faz:
 git checkout main -> garante que está na main
 git merge feature-login -> mescla as mudanças da feature-login
+
+
+git stash é usado para salvar temporariamente mudanças não commitadas no seu repositório Git, permitindo que você volte a um estado limpo da branch atual (sem perder o que estava fazendo).
+Situação comum:
+Você está trabalhando em algo, mas precisa mudar de branch para resolver um problema urgente — só que você ainda não quer commitar suas mudanças atuais. O que fazer?
+Use git stash para "guardar" essas mudanças de lado, mudar de branch, e depois "restaurá-las" quando quiser.
+
+Podemos verificar as stashs criadas pelo comando git stash list
+
