@@ -123,3 +123,6 @@ Use git stash para "guardar" essas mudanças de lado, mudar de branch, e depois 
 
 Podemos verificar as stashs criadas pelo comando git stash list
 
+O comando git stash apply 0(número da stash) -> serve para recuperar o codigo que foi adicionado na stash 
+
+O comando git stash show -p 0(número da stash) -> serve para verificar as mudanças de uma stash
