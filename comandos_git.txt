@@ -142,6 +142,14 @@ Principais usos das tags:
 3-Referência imutável
 ºUma tag aponta para um commit específico e não muda (diferente de branches).
 
+Antes de criar uma tag utilize os comandos git add . e o git commit
+
 Podemos criar tags nos branches por meio do comando git tag -a <nome> -m "<msg>" -> git tag -a v1.0 -m "versão estável 1.0"
 
 O comando git tag lista todas as tags
+
+E se quiser enviar a tag para o repositório remoto: git push origin v1.0
+
+O comando git show v1.0(nome da tag) serve para ver os detalhes da tag(as alterações que foram feitas e adicionadas a essa tag)
+
+Podemos trocar de tags com o comando git checkout v2.0(nome da tag)
