@@ -99,3 +99,10 @@ reset → move o ponteiro do branch atual para um commit anterior.
 
 Para visualizar os branchs disponíveis basta digitar git branch
 
+Para criar uma branch você precisa utilizar o comando git branch nome_da_branch
+
+Para deletar uma branch utilize o comando git branch -d ou --delete nome_da_branch
+
+Podemos mudar para outro branch utilizando o comando git checkout nome_da_branch
+
+O comando git checkout -b nome_da_branch cria uma branch nova e automaticamente ele muda para essa branch criada
