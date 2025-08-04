@@ -155,3 +155,6 @@ Podemos trocar de tags com o comando git checkout v2.0(nome da tag)
 E se quiser enviar a tag para o repositório remoto: git push origin v1.0(nome da tag)
 
 Se você quiser enviar mais tags git push origin --tags
+
+
+
