@@ -166,3 +166,56 @@ Ou seja:
 
 💡 Pense assim: git fetch = "puxar as novidades, mas deixar na porta".
 git pull = "puxar as novidades e já colocar dentro da casa".
+
+
+
+git remote -v - serve para listar todos os repositórios remotos que estão vinculados ao seu repositório local, mostrando o nome do remoto (geralmente origin) e a URL associada, tanto para fetch (buscar alterações) quanto para push (enviar alterações).
+
+Por exemplo:
+$ git remote -v
+origin  https://github.com/usuario/repositorio.git (fetch)
+origin  https://github.com/usuario/repositorio.git (push)
+📌 Explicando:
+origin → nome dado ao remoto (padrão quando você clona um repo).
+(fetch) → URL usada para baixar mudanças.
+(push) → URL usada para enviar mudanças.
+💡 Isso é útil para:
+Conferir se o repositório local está apontando para o remoto correto.
+Ver a URL do repositório remoto (HTTP ou SSH).
+Identificar múltiplos remotos (caso trabalhe com mais de um).
+
+
+
+O comando git remote rm origin serve para remover a referência do remote chamado "origin" do seu repositório Git local.
+Explicando melhor:
+git remote: é o comando para gerenciar conexões remotas no Git, ou seja, os repositórios online (ou em outro lugar) aos quais seu repositório local está conectado.
+rm (remove): indica que você quer remover um remote.
+origin: é o nome padrão que o Git dá para o remote principal (geralmente o repositório original do qual você clonou).
+
+Quando usar?
+Quando você quer remover a referência para um repositório remoto chamado origin.
+Por exemplo, se você mudou o endereço do repositório remoto, pode querer remover o antigo antes de adicionar o novo.
+Ou se você não quer mais usar aquele repositório remoto específico.
+
+
+
+git remote add origin https://github.com/AndreSantosDS/curso_git_1.git
+serve para associar seu repositório local a um repositório remoto (geralmente no GitHub, GitLab, Bitbucket etc.).
+
+Explicando:
+git remote: gerencia repositórios remotos.
+add: adiciona um novo repositório remoto.
+origin: é o nome padrão que se dá ao repositório remoto principal. Você pode usar outro nome, mas origin é o mais comum.
+<url-do-repositório>: é o endereço do repositório remoto, que pode ser HTTPS ou SSH.
+
+Pra que usar?
+Quando você cria um repositório local, ele não está ligado a nenhum servidor remoto. Com esse comando, você "diz" para o Git onde fica o repositório remoto para poder enviar (push) ou receber (pull/fetch) alterações.
+
+
+
+Submódulo é a maneira que temos de possuir dois ou mais projetos em um repositório.
+Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo suas estruturas separadas.
+Para adicionar o submódulo utilizamos o coamando git submodule add https://github.com/AndreSantosDS/submodulo.git submodulo<repo>.
+Para verificar os submódulos o comando é git submodule.
+Para atualizar um submódulo primeiro devemos commitar as mudanças.
+E enviar para o repo do submódulo utilizamos git push --recurse-submodules=on-demand
