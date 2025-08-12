@@ -158,3 +158,11 @@ Se você quiser enviar mais tags git push origin --tags
 
 
 
+git fetch serve para buscar as atualizações do repositório remoto e trazê-las para o seu repositório local, sem alterar seus arquivos nem o branch atual.
+Ou seja:
+ºEle baixa novos commits, branches e tags do remoto.
+ºMas não mistura automaticamente com o que você está trabalhando (isso quem faz é o git pull).
+ºÉ útil para ver o que mudou antes de atualizar seu código.
+
+💡 Pense assim: git fetch = "puxar as novidades, mas deixar na porta".
+git pull = "puxar as novidades e já colocar dentro da casa".
