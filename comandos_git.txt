@@ -238,3 +238,9 @@ Podemos também verificar a diferença entre arquivos: git diff <arquivo> <arqui
 O comando git shortlog nos dá um log resumido do projeto;
 Cada commit será por nome do autor;
 Podemos então saber quais commits foram enviados ao projeto e por quem;
+
+
+
+O comando git clean -f vai verificar e limpar arquivos não estão sendo trackeados;
+Ou seja, todos que você não utilizou git add;
+Utilizados para arquivos que são gerados automaticamente, por exemplo, e atrapalham a visualização do que é realmente imprtante;
