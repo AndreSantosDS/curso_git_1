@@ -286,7 +286,7 @@ Branch com commits ruins - video 71
 Há uma solução chamada private branches;
 Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
 Ao fim da solução do problema podemos fazer um rebase;
-Para excluir ou renomear algum commit, vai até a branch func_a e digite git rebase func_a private_func_a;
+Para excluir ou renomear algum commit, vai até a branch func_a e digite git rebase func_a private_func_a -i;
 O comando será: git checkout func_a e depois git rebase private_func_a, os commits que não foram excluidos e os codigos da branch private_func_a vão para branch func_a, mas não de o git push na branch private_func_a, apenas de o git push na branch func_a, pois a branch private_func_a vai ficar apenas na sua máquina e não vai para o github
 Escolhemos os branches para excluir (squash) e renomear com (reword)
 
